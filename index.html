@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Key Logger</title>
+    <style>
+      * {
+        margin: 0;
+        padding: 0;
+        box-sizing: border-box;
+      }
+
+      body {
+        font-family: Arial, sans-serif;
+        height: 100vh;
+        width: 100%;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        flex-direction: column;
+      }
+      p {
+        margin-top: 16px;
+        opacity: 0.6;
+      }
+
+      button {
+        padding: 10px 20px;
+        border: none;
+        border-radius: 5px;
+        cursor: pointer;
+        transition: background-color 0.3s ease;
+        border: 1px #d7d7d7 solid;
+      }
+
+      .container {
+        width: 100%;
+        padding: 0 38px;
+        display: flex;
+        margin-top: 36px;
+        gap: 16px;
+        justify-content: center;
+      }
+
+      .teller-left,
+      .teller-right {
+        width: 40%;
+        min-height: 80px;
+        border-radius: 10px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        font-size: 24px;
+        text-align: center;
+        padding: 2rem;
+      }
+
+      .teller-left {
+        background: #ffae19;
+      }
+      .teller-right {
+        background: #d7d7d7;
+      }
+    </style>
+  </head>
+  <body>
+    <h1>Key Logger</h1>
+
+    <p>This app tell, which key are you pressing.</p>
+
+    <div class="container">
+      <button id="start">Start Key logging</button>
+      <button id="stop">Stop key logging</button>
+    </div>
+
+    <div class="container">
+      <div class="teller-left"></div>
+      <div class="teller-right"></div>
+    </div>
+
+    <script src="./script.js"></script>
+    <!-- <script src="./script.js"></script> -->
+  </body>
+</html>
